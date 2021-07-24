@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="modal">
+        <form action="">
+            <div>
+                <input id="UserName" name="login" class="textField" placeholder="username" data-rule="login">
+            </div>
+            <div>
+                <input id="UserPassword" name = password type="password" placeholder="password" data-rule="password">
+            </div>
+            <button id="btn" type="submit" value="LOGIN">Submit</button>
+            
+        </form>
+    </div>
+    <style>
+html{
+    background-color:#44bf3d;
+}
+.modal{
+    margin-top: 200px;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background-color: #ffffff ;
+    width: 450px;
+    height: 350px;
+    box-shadow: inherit;
+    box-shadow:5px 5px 5px #727872;
+   
+}
+input{
+    height: 50px;
+    width: 350px;
+    text-align: center;
+    margin-left: 50px;
+    background-color: #f5f5f5;
+    border:0;
+    color: rgb(160, 159, 159);
+     
+
+}
+
+
+#UserName{
+    margin-top: 50px;
+}
+button{
+    background-color: #329638;
+    color: white;
+    height: 50px;
+    width: 358px;
+    margin-left: 50px;
+}
+.valid {
+    border:1px solid green;
+}
+.invalid {
+    border: 1px solid red;
+    background-image: linear-gradient(to right, pink, rgb(223, 43, 43));
+}
+    </style>
+   
+</body>
+</html>
